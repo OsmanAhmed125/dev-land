@@ -1,8 +1,8 @@
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import './App.css';
-import Blog from './components/blog';
-import Contact from './components/contact';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
 
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
