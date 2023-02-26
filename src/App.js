@@ -1,11 +1,12 @@
 
 import './App.css';
-import Blog from './components/blog';
-import Contact from './components/contact';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import About from './components/About';
 
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
-import Serves from './components/serves';
+import Serves from './components/Serves';
 function App() {
   return (
     <div className="App">
