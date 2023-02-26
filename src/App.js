@@ -1,20 +1,27 @@
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import './App.css';
-import Blog from './components/blog';
-import Contact from './components/contact';
+import About from './components/About';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
-import Serves from './components/serves';
+import Serves from './components/Serves';
 function App() {
   return (
     <div className="App">
-      <Homepage />
       <Navbar />
-      <About />
+<Routes>
+<Route path='./' element= {<Homepage />}/>
+    <Route path='./About'element={<About/>} />
       <Contact />
       <Serves />
       <Blog />
+    
+</Routes>
+      <Footer />
     </div>
   );
 }
