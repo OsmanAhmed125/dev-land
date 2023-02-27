@@ -1,10 +1,11 @@
+
+import homepic from '../imgs/company.jpg'
 import gallery1 from '../imgs/gallery-01.png'
 import gallery2 from '../imgs/gallery-02.png'
 import gallery3 from '../imgs/gallery-03.jpg'
 import gallery4 from '../imgs/gallery-04.png'
 import gallery5 from '../imgs/gallery-05.jpg'
 import gallery6 from '../imgs/gallery-06.png'
-import homepic from '../imgs/company.jpg'
 export default function Homepage() {
     return (
         <div>
@@ -46,47 +47,14 @@ export default function Homepage() {
                 <div className='container-fluid'>
                     <div className='row'>
                     <div className='col-sm'>
+                   <hr/>
                    <h1 className='text-center'> انظر الى خدماتنا</h1>
                    
-    <div className="gallery" id="gallery">
-      <div className="container">
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery1} alt="" />
-          </div>
-        </div>
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery2} alt="" />
-          </div>
-        </div>
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery3} alt="" />
-          </div>
-        </div>
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery4} alt="" />
-          </div>
-        </div>
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery5} alt="" />
-          </div>
-        </div>
-        <div className="box">
-          <div className="image">
-            <img decoding="async" src={gallery6} alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    
                 </div>
                     </div>
                 </div>
                
         </div>
+        
     );
 }

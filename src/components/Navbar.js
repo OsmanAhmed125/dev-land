@@ -8,18 +8,18 @@ export default function Navbar(){
     
     <div className="container-fluid">
       <a  className="navbar-brand" href="/" >
-        <img className="logo" width="90" src={logo} />
+        <img className="logo" width="90" src={require("../imgs/company.jpg")} />
     </a>
         <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <i className='bx bx-menu-alt-right'></i>
+        <i class="bi bi-three-dots-vertical menuicon" ></i>
         </button> 
         <div className="collapse navbar-collapse" id="nav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link text-white"  href='./About.js'>About</Link>
+                <a className="nav-link text-white"  href='./About.js' activeClassName='navbar__link--active'>About</a>
               </li>
               <li className="nav-item">
-                <NavLink to='./About' className="nav-link text-white"  >Contact</NavLink>
+                <Link to={`./About`}className="nav-link text-white"  href='contact' activeClassName='navbar__link--active'>Contact</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/comments" >Comments</a>
