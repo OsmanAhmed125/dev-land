@@ -1,4 +1,10 @@
 import homepic from '../imgs/company.jpg'
+import gallery1 from '../imgs/gallery-01.png'
+import gallery2 from '../imgs/gallery-02.png'
+import gallery3 from '../imgs/gallery-03.jpg'
+import gallery4 from '../imgs/gallery-04.png'
+import gallery5 from '../imgs/gallery-05.jpg'
+import gallery6 from '../imgs/gallery-06.png'
 export default function Homepage() {
     return (
         <div>
@@ -40,12 +46,51 @@ export default function Homepage() {
                 <div className='container-fluid'>
                     <div className='row'>
                     <div className='col-sm'>
+                   <hr/>
                    <h1 className='text-center'> انظر الى خدماتنا</h1>
-                   
+                   <br/>
+                   <br/>
+                   <div className="gallery" id="gallery">
+      <div className="container">
+        <div className="box">
+          <div className="image">
+            <img  src={gallery1}  />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img  src={gallery2}  />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img  src={gallery3}  />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img  src={gallery4}  />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img  src={gallery5}  />
+          </div>
+            <p className='p-img-5 text-center text-dark'>خدمة التصميم</p>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img  src={gallery6} />
+          </div>
+            <p className='p-img-6 text-center text-dark'>خدمة تصميم المواقع</p>
+        </div>
+      
+    </div>
                 </div>
                     </div>
                 </div>
                
+        </div>
         </div>
     );
 }
