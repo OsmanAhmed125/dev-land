@@ -1,6 +1,6 @@
 import {  NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom';
-
+import logo from '../imgs/company.jpg'
 export default function Navbar(){
     return(
            
@@ -8,7 +8,7 @@ export default function Navbar(){
     
     <div className="container-fluid">
       <a  className="navbar-brand" href="/" >
-        <img className="logo" width="90" src={require("../imgs/company.jpg")} />
+        <img className="logo" width="90" src={logo} />
     </a>
         <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
             <i className='bx bx-menu-alt-right'></i>
@@ -16,16 +16,16 @@ export default function Navbar(){
         <div className="collapse navbar-collapse" id="nav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link text-white"  href='./About.js' activeClassName='navbar__link--active'>About</a>
+                <Link className="nav-link text-white"  href='./About.js'>About</Link>
               </li>
               <li className="nav-item">
-                <Link to={`./About`}className="nav-link text-white"  href='contact' activeClassName='navbar__link--active'>Contact</Link>
+                <NavLink to='./About' className="nav-link text-white"  >Contact</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/comments" activeClassName='navbar__link--active'>Comments</a>
+                <a className="nav-link text-white" href="/comments" >Comments</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/shop" activeClassName='navbar__link--active'>Store</a>
+                <a className="nav-link text-white" href="/shop" >Store</a>
               </li>
             </ul>
           </div>

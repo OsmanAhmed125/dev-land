@@ -1,5 +1,4 @@
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-
+import { Route } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -13,15 +12,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-<Routes>
+
 <Route path='./' element= {<Homepage />}/>
-    <Route path='./About'element={<About/>} />
+    <Route path='./About' element={<About/>} />
       <Contact />
       <Serves />
       <Blog />
     
-</Routes>
-      <Footer />
+    <Footer />
     </div>
   );
 }
