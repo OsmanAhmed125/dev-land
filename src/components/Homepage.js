@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import homepic from '../imgs/company.jpg'
 import gallery1 from '../imgs/gallery-01.png'
 import gallery2 from '../imgs/gallery-02.png'
@@ -52,6 +53,45 @@ export default function Homepage() {
                    
                 </div>
                     </div>
+                
+    <div className="gallery" id="gallery">
+      
+      <div className="container">
+        <div className="box">
+          <div className="image">
+            <img src={gallery1} />
+          </div>
+            <p className='work-title text-center text-dart'>خدمات التصميم</p>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img src={gallery2} />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img src={gallery3} />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img src={gallery4} />
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <Link to='./Serves'>
+            <img src={gallery5} />
+            </Link>
+          </div>
+        </div>
+        <div className="box">
+          <div className="image">
+            <img src={gallery6} />
+          </div>
+        </div>
+      </div>
+    </div>
                 </div>
                
         </div>

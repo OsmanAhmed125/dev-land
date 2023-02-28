@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -13,14 +13,16 @@ function App() {
     <div className="App">
       <Navbar />
 <Routes>
-<Route path='./' element= {<Homepage />}/>
-    <Route path='./About'element={<About/>} />
-      <Contact />
-      <Serves />
-      <Blog />
-    
-</Routes>
+  
+<Route path='/' element= {<Homepage />}/>
+    <Route path='/About' element={<About/>} />
+     <Route path='./Contact' element= {<Contact />} />
+      <Route path='./Serves' element={<Serves />}/>
+    <Route path='./Blog' element={<Blog/>} />
+</Routes>    
       <Footer />
+
+
     </div>
   );
 }
