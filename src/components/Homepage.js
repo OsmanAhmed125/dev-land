@@ -59,23 +59,28 @@ export default function Homepage() {
       <div className="container">
         <div className="box">
           <div className="image">
-            <img src={gallery1} />
+            <Link to='./Serves' ><img src={gallery1} /></Link>
           </div>
             <p className='work-title text-center text-dart'>خدمات التصميم</p>
         </div>
         <div className="box">
           <div className="image">
-            <img src={gallery2} />
+           <Link to='./Serves'>
+           <img src={gallery2} />
+           </Link>
           </div>
         </div>
         <div className="box">
           <div className="image">
+            <Link to='./Serves' >
             <img src={gallery3} />
+            </Link>
           </div>
         </div>
         <div className="box">
           <div className="image">
-            <img src={gallery4} />
+           <Link to='./Serves'>
+           <img src={gallery4} /></Link>
           </div>
         </div>
         <div className="box">
@@ -87,7 +92,7 @@ export default function Homepage() {
         </div>
         <div className="box">
           <div className="image">
-            <img src={gallery6} />
+           <Link to='./Serves'> <img src={gallery6} /></Link>
           </div>
         </div>
       </div>

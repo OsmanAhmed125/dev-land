@@ -25,7 +25,7 @@ export default function Navbar(){
                 <Link className="nav-link text-white"  >Comments</Link>
               </li>
               <li className="nav-item">
-                <Link to='/Serves' className="nav-link text-white"  >Store</Link>
+                <Link to='/Serves' className="nav-link text-white"  >Serves</Link>
               </li>
             </ul>
           </div>
