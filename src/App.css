@@ -270,17 +270,7 @@ background-color: var(--c1);
   padding: 25px;
   color: #777;
 }
-.features .box a {
-  display: block;
-  border: 3px solid transparent;
-  width: fit-content;
-  margin: 0 auto 30px;
-  font-weight: bold;
-  font-size: 22px;
-  padding: 10px 30px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+
 .features .quality .img-holder::before {
   background-color:var(--c1);
 }
@@ -325,12 +315,9 @@ background-color: var(--c1);
   color: white;
 }
 
-.about {
-  padding-top:60px;
-  padding-bottom: calc(var(--section-padding) + 60px);
-}
+
 .about .about-content {
-  margin-top: 100px;
+  /* margin-top: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
